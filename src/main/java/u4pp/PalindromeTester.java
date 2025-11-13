@@ -8,9 +8,9 @@ public class PalindromeTester {
     /**
      * YOUR JAVADOC HERE
      */
-    public static void execute(Scanner sc) {
+   public static void execute(Scanner sc) {
         // Prompt for phrase
-         System.out.println("Welcome to Palindrome Tester");
+        System.out.println("Welcome to Palindrome Tester");
         boolean keepTesting = true;
 
         while (keepTesting) {
@@ -26,15 +26,15 @@ public class PalindromeTester {
 
             // Ask if they want to continue
             keepTesting = getYesNoInput("Keep testing? (Y)es or (N)o: ", sc);
-        }    
+            }
     }
 
     /**
      * YOUR JAVADOC HERE
-     */
-    public static boolean isPalindrome(String phrase) {
+          */
+   public static boolean isPalindrome(String phrase) {
         // 1. Filter the string
-        String cleaned = filterString(phrase);
+        String input = getPhrase(sc);
         int length = cleaned.length();
 
         // 2. Check if the filtered string is a palindrome using a for loop
@@ -50,6 +50,8 @@ public class PalindromeTester {
     }
 
     /* Any helper methods you might need */
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
     private static boolean getYesNoInput(String prompt, Scanner sc) {
     while (true) {
             System.out.print(prompt); // Use print to match sample run
@@ -66,9 +68,11 @@ public class PalindromeTester {
             }
         }
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
     private static String getPhrase(Scanner sc) {
         System.out.print("Enter a phrase: ");
         return sc.nextLine();
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 }
