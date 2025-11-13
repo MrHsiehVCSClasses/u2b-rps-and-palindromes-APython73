@@ -9,6 +9,7 @@
   "java.sources.organizeImports.starThreshold": 99,
   "java.sources.organizeImports.staticStarThreshold": 99,
   "java.test.config": {
+  "git.decorations.enabled": false,
     "workingDirectory": "${workspaceFolder}"
   },
   "java.test.defaultConfig": "",
@@ -17,5 +18,6 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-  }
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }
